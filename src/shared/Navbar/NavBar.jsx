@@ -33,7 +33,7 @@ const NavBar = () => {
   );
 
   return (
-    <nav className="h-20 flex items-center justify-between px-10">
+    <nav className="h-20 flex items-center justify-between px-10 z-[100]">
       {/* logo and name */}
       <Link to="/" className="flex gap-1">
         <img className="w-9" src="/favicon.svg" alt="icon" />
@@ -55,7 +55,7 @@ const NavBar = () => {
       <div
         className={
           isOpen
-            ? `flex flex-col md:hidden absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] bg-gray-500/40 p-10 sm:p-20 px-20 sm:px-32 rounded-lg transition-all ease-in-out duration-500`
+            ? `flex flex-col md:hidden absolute z-50 top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] bg-gray-500 text-white p-10 sm:p-20 px-20 sm:px-32 rounded-lg transition-all ease-in-out duration-500`
             : `flex flex-col md:hidden absolute top-[-100%]  left-[50%] translate-x-[-50%] bg-gray-500/40 p-10 sm:p-20 px-20 sm:px-32 rounded-lg transition-all ease-in-out duration-500`
         }>
         <ul className="flex text-center flex-col gap-8 md:gap-12 font-montserrat font-semibold">
