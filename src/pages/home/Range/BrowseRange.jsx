@@ -25,16 +25,30 @@ const BrowseRange = () => {
       </div>
       <Swiper
         watchSlidesProgress={true}
-        spaceBetween={30}
-        slidesPerView={3}
+        // spaceBetween={10}
+        // slidesPerView={1}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        }}
         className="mySwiper">
         {rooms.map((room, index) => (
           <SwiperSlide key={index}>
-            <div className="overflow-hidden rounded-md">
+            <div className="rounded-md ">
               <img
                 src={room.imageURL}
                 alt={room.title}
-                className="h-[450px] w-full object-cover"
+                className="h-[450px] w-full object-cover rounded-md"
               />
               <h5 className="mt-3 text-lg font-bold text-center">
                 {room.title}

@@ -2,9 +2,9 @@ const Hero = () => {
   return (
     <section className="relative">
       <img
-        src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGZ1cm5pdHVyZXxlbnwwfHwwfHx8MA%3D%3D"
+        src="https://scontent.fdac37-1.fna.fbcdn.net/v/t1.15752-9/420120250_386456617405987_8705515316424789880_n.jpg?stp=dst-jpg_s2048x2048&_nc_cat=108&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeGcCd1cqXcLZdsOd2M82yOkz-ootbcp2xLP6ii1tynbEjuk8lctVrqCN5WcTB_zXljJBn2qEH39pZ_m-6an-DGg&_nc_ohc=VCqpYtIm-tIAX9D_WJE&_nc_ht=scontent.fdac37-1.fna&oh=03_AdSdNj94Wilk3j9JAMz1GjVW8vBWntnieTYH09fZ73y96A&oe=65DF32C2"
         alt="furniture"
-        className="w-screen h-screen bg-cover"
+        className="object-cover w-screen h-screen"
       />
       <div className="absolute top-[50%] translate-y-[-50%] right-[5%] bg-red-100 rounded-md px-5 md:px-10 py-7 md:py-14  font-montserrat w-[50%] md:w-[40%] shadow-md shadow-slate-500">
         <h6 className="text-base font-bold tracking-widest md:text-lg">

@@ -1,0 +1,182 @@
+[
+    {
+      "product_name": "Elegant Dining Table",
+      "product_type": "Dining",
+      "images": [
+        "https://img.freepik.com/free-photo/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table_105762-2185.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph",
+        "https://img.freepik.com/free-photo/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table_105762-2053.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph",
+        "https://img.freepik.com/free-photo/3d-rendering-modern-dining-set-modern-luxury-dining-room_105762-2202.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph"
+      ],
+      "intro": "Gather your family around this dining table for memorable meals.",
+      "price": 500,
+      "discount": 20,
+      "offer": "Free shipping on orders over $500.",
+      "rating": 4.9,
+      "description": "Crafted from solid wood, this dining table combines timeless elegance with durability. The intricate detailing on the legs adds a touch of sophistication to your dining area."
+    },
+    {
+      "product_name": "Comfortable Sofa Set",
+      "product_type": "Living Room",
+      "images": [
+        "https://img.freepik.com/free-photo/3d-rendering-loft-luxury-living-room-with-bookshelf-near-bookshelf_105762-2224.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
+        "https://img.freepik.com/free-photo/bangkok-thailand-august-12-2016-beautiful-luxury-living-room_1203-2867.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
+        "https://img.freepik.com/free-photo/living-room-interior_1048-9888.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais"
+      ],
+      "intro": "Create a cozy living space with this comfortable sofa set.",
+      "price": 800,
+      "discount": 15,
+      "offer": "Buy a sofa set and get a matching coffee table at half price.",
+      "rating": 4.7,
+      "description": "Indulge in relaxation with this plush sofa set. The premium fabric and ergonomic design provide the perfect combination of style and comfort for your living room."
+    },
+    {
+      "product_name": "Modern Office Desk",
+      "product_type": "Office",
+      "images": [
+        "https://img.freepik.com/free-photo/modern-office-space-with-desktops-with-modern-computers-created-with-generative-ai-technology_185193-110089.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph",
+        "https://img.freepik.com/free-photo/3d-rendering-luxury-business-meeting-working-room-executive-office_105762-1993.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph",
+        "https://img.freepik.com/free-photo/empty-room-with-chairs-desks_23-2149008873.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph"
+      ],
+      "intro": "Enhance your workspace with this sleek and modern office desk.",
+      "price": 300,
+      "discount": 10,
+      "offer": "Free assembly service for office furniture.",
+      "rating": 4.5,
+      "description": "Boost your productivity with this modern office desk. Featuring ample storage and a minimalist design, it's perfect for creating a stylish and organized workspace."
+    },
+    {
+        "product_name": "Vintage Bed Frame",
+        "product_type": "Bedroom",
+        "images": [
+          "https://img.freepik.com/free-photo/room-interior-design_23-2148899453.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
+          "https://example.com/bed-frame-2.jpg",
+          "https://example.com/bed-frame-3.jpg"
+        ],
+        "intro": "Transform your bedroom with this charming vintage bed frame.",
+        "price": 700,
+        "discount": 15,
+        "offer": "Includes a free set of matching bedside tables.",
+        "rating": 4.8,
+        "description": "Experience the allure of a bygone era with this beautifully crafted vintage bed frame. The intricate details and sturdy construction make it a centerpiece for your bedroom."
+      },
+      {
+        "product_name": "Lounge Accent Chair",
+        "product_type": "Living Room",
+        "images": [
+          "https://img.freepik.com/free-photo/front-view-empty-workplace_23-2148727527.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
+          "https://example.com/accent-chair-2.jpg",
+          "https://example.com/accent-chair-3.jpg"
+        ],
+        "intro": "Add a touch of elegance to your living room with this stylish accent chair.",
+        "price": 250,
+        "discount": 10,
+        "offer": "Buy two chairs, get a matching throw pillow for free.",
+        "rating": 4.6,
+        "description": "Make a statement with this eye-catching lounge accent chair. Its modern design and comfortable upholstery make it the perfect addition to any contemporary living space."
+      },
+      {
+        "product_name": "Rustic Coffee Table",
+        "product_type": "Living Room",
+        "images": [
+          "https://img.freepik.com/free-photo/high-angle-coffee-cup-book-table_23-2149678902.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
+          "https://example.com/coffee-table-2.jpg",
+          "https://example.com/coffee-table-3.jpg"
+        ],
+        "intro": "Complete your living room setup with this charming rustic coffee table.",
+        "price": 150,
+        "discount": 5,
+        "offer": "Matching side table included with every purchase.",
+        "rating": 4.5,
+        "description": "Bring warmth and character to your living room with this rustic coffee table. Its distressed finish and solid wood construction evoke a sense of timeless charm."
+      },
+      {
+        "product_name": "Executive Leather Chair",
+        "product_type": "Office",
+        "images": [
+          "https://img.freepik.com/free-photo/comfy-wing-chair-carpenter-s-workshop_181624-25944.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
+          "https://example.com/leather-chair-2.jpg",
+          "https://example.com/leather-chair-3.jpg"
+        ],
+        "intro": "Upgrade your office with the sophistication of an executive leather chair.",
+        "price": 400,
+        "discount": 20,
+        "offer": "Free express shipping on all office furniture orders.",
+        "rating": 4.9,
+        "description": "Make a powerful statement in your office with this executive leather chair. The high-quality leather upholstery and ergonomic design ensure both style and comfort."
+      },
+      {
+        "product_name": "Contemporary Bookshelf",
+        "product_type": "Home Decor",
+        "images": [
+          "https://img.freepik.com/free-photo/home-interior-design-arrangement_23-2148986615.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
+          "https://example.com/bookshelf-2.jpg",
+          "https://example.com/bookshelf-3.jpg"
+        ],
+        "intro": "Showcase your literary collection with this sleek contemporary bookshelf.",
+        "price": 300,
+        "discount": 15,
+        "offer": "Free assembly and book arrangement service included.",
+        "rating": 4.7,
+        "description": "Organize your books in style with this modern bookshelf. Its minimalist design and adjustable shelves make it a versatile and practical addition to any room."
+      },
+      {
+        "product_name": "Garden Patio Set",
+        "product_type": "Outdoor",
+        "images": [
+          "https://img.freepik.com/free-photo/outdoor-patio-with-chair-table_1339-4789.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
+          "https://example.com/patio-set-2.jpg",
+          "https://example.com/patio-set-3.jpg"
+        ],
+        "intro": "Create an inviting outdoor space with this elegant garden patio set for beauty and comfort.",
+        "price": 600,
+        "discount": 10,
+        "offer": "Free weather-resistant cover with every patio set purchase.",
+        "rating": 4.8,
+        "description": "Enjoy the outdoors in comfort and style with this garden patio set. The durable materials and timeless design make it perfect for entertaining or relaxation."
+      },
+      {
+        "product_name": "Cozy Throw Blanket",
+        "product_type": "Home Decor",
+        "images": [
+          "https://img.freepik.com/free-photo/close-up-cozy-texture-detail_23-2149385300.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
+          "https://example.com/throw-blanket-2.jpg",
+          "https://example.com/throw-blanket-3.jpg"
+        ],
+        "intro": "Add warmth to your home with this irresistibly soft and cozy throw blanket.",
+        "price": 50,
+        "discount": 5,
+        "offer": "Choose from a variety of colors to match your decor.",
+        "rating": 4.6,
+        "description": "Wrap yourself in comfort with this luxurious throw blanket. The premium fabric and stylish design make it a perfect addition to your living room or bedroom."
+      },
+      {
+        "product_name": "Kids' Bunk Bed",
+        "product_type": "Kids",
+        "images": [
+          "https://img.freepik.com/free-photo/furniture-background-clean-wall-wood_1253-666.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
+          "https://example.com/bunk-bed-2.jpg",
+          "https://example.com/bunk-bed-3.jpg"
+        ],
+        "intro": "Create a playful and functional space for your kids with this sturdy bunk bed.",
+        "price": 350,
+        "discount": 10,
+        "offer": "Includes a free set of colorful bed linens.",
+        "rating": 4.5,
+        "description": "Make bedtime fun with this kids' bunk bed. The safety features and playful design ensure a secure and enjoyable sleeping space for your little ones."
+      },
+      {
+        "product_name": "Antique Wardrobe",
+        "product_type": "Bedroom",
+        "images": [
+          "https://img.freepik.com/free-photo/3d-rendering-classic-interior_23-2150943441.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
+          "https://example.com/wardrobe-2.jpg",
+          "https://example.com/wardrobe-3.jpg"
+        ],
+        "intro": "Add a touch of history to your bedroom with this exquisite antique wardrobe.",
+        "price": 900,
+        "discount": 15,
+        "offer": "Free in-home assembly by our expert craftsmen.",
+        "rating": 4.9,
+        "description": "Elevate your bedroom with the timeless beauty of this antique wardrobe. The intricate carvings and rich wood finish make it a statement piece for your home."
+      }
+]
