@@ -25,8 +25,6 @@ const BrowseRange = () => {
       </div>
       <Swiper
         watchSlidesProgress={true}
-        // spaceBetween={10}
-        // slidesPerView={1}
         breakpoints={{
           640: {
             slidesPerView: 1,
