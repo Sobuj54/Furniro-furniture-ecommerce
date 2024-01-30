@@ -9,7 +9,7 @@ const Rooms = () => {
           <h1 className="text-3xl md:text-5xl font-bold leading-tight">
             50+ Beautiful rooms inspiration
           </h1>
-          <p className="mt-2 font-normal md:font-semibold">
+          <p className="mt-4 font-normal md:font-medium">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio quod
             ut eveniet ullam maxime facilis!
           </p>

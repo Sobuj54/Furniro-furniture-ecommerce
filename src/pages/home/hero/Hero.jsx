@@ -15,7 +15,7 @@ const Hero = () => {
         <h3 className="text-[#B88E2F] text-xl sm:text-3xl md:text-5xl font-extrabold leading-snug">
           Discover Our <br /> New Collection
         </h3>
-        <p className="font-semibold w-full md:w-[95%] mt-2">
+        <p className="font-semibold w-full md:w-[95%] mt-4">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
           consectetur ipsum corporis, officia ipsa vitae?
         </p>
