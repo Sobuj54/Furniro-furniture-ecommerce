@@ -42,9 +42,9 @@ const Footer = () => {
               <input
                 type="text"
                 placeholder="Enter Your Email Address"
-                className="border-b-2 border-slate-500 mr-4 focus:outline-none hover:scale-105 transition-all duration-150"
+                className="border-b-[4px] border-slate-500 mr-4 focus:outline-none focus:border-teal-600 hover:scale-105 transition-all duration-150"
               />
-              <button className="underline underline-offset-8 decoration-2 decoration-slate-500 hover:scale-105">
+              <button className="underline underline-offset-8 decoration-[3px] decoration-slate-500 hover:scale-105">
                 SUBSCRIBE
               </button>
             </form>
