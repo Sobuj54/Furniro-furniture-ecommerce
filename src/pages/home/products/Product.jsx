@@ -21,7 +21,11 @@ const Product = ({ product }) => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       className="relative">
-      <img src={images[0]} alt={product_name} className="object-cover h-72" />
+      <img
+        src={images[0]}
+        alt={product_name}
+        className="object-cover h-72 w-full"
+      />
       <div className="p-4 bg-slate-200">
         <h5 className="py-2 text-lg font-bold">{product_name}</h5>
         <p className="text-sm">{intro}</p>
