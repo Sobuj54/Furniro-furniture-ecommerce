@@ -1,0 +1,62 @@
+[
+    {
+      "id": "01",
+      "title": "Luxury Suite",
+      "type": "Suite",
+      "image": "https://img.freepik.com/free-photo/indoor-design-luxury-resort_23-2150497277.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais"
+    },
+    {
+      "id": "02",
+      "title": "Executive Suite",
+      "type": "Suite",
+      "image": "https://img.freepik.com/free-photo/cozy-bedroom-snowy-mountain-view-luxury-hotel-ultimate-relaxation-generated-by-artificial-intelligence_188544-149975.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais"
+    },
+    {
+      "id": "03",
+      "title": "Deluxe Room",
+      "type": "Standard",
+      "image": "https://img.freepik.com/free-photo/pillow-sofa_74190-4110.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais"
+    },
+    {
+      "id": "04",
+      "title": "Family Suite",
+      "type": "Suite",
+      "image": "https://img.freepik.com/free-photo/hotel-interior_144627-27370.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais"
+    },
+    {
+      "id": "05",
+      "title": "Standard Room",
+      "type": "Standard",
+      "image": "https://img.freepik.com/free-photo/interior-modern-apartment-decorated-comfortably-with-huge-windows_181624-18498.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais"
+    },
+    {
+      "id": "06",
+      "title": "Penthouse Suite",
+      "type": "Suite",
+      "image": "https://img.freepik.com/free-photo/life-style_1122-1800.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais"
+    },
+    {
+      "id": "07",
+      "title": "Presidential Suite",
+      "type": "Suite",
+      "image": "https://img.freepik.com/free-photo/living-room-modern-apartment-with-two-identical-sofas-opposite-each-other_181624-14768.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais"
+    },
+    {
+      "id": "08",
+      "title": "Ocean View Room",
+      "type": "Standard",
+      "image": "https://img.freepik.com/free-photo/living-room-mid-century-style-with-warm-colors-ai-generative_123827-23930.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais"
+    },
+    {
+      "id": "09",
+      "title": "Business Class Suite",
+      "type": "Suite",
+      "image": "https://img.freepik.com/free-photo/living-room-mid-century-style-with-warm-colors-ai-generative_123827-23931.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais"
+    },
+    {
+      "id": "10",
+      "title": "Mountain View Room",
+      "type": "Standard",
+      "image": "https://img.freepik.com/free-photo/chair-sits-cabinstyle-bedroom_157027-4296.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais"
+    }
+  ]
