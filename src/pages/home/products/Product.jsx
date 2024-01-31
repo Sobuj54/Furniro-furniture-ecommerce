@@ -2,6 +2,7 @@ import { useState } from "react";
 import { CiShare2 } from "react-icons/ci";
 import { MdOutlineCompareArrows } from "react-icons/md";
 import { IoIosHeartEmpty } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const Product = ({ product }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -24,7 +25,7 @@ const Product = ({ product }) => {
       <img
         src={images[0]}
         alt={product_name}
-        className="object-cover h-72 w-full"
+        className="object-cover w-full h-72"
       />
       <div className="p-4 bg-slate-200">
         <h5 className="py-2 text-lg font-bold">{product_name}</h5>
@@ -37,9 +38,11 @@ const Product = ({ product }) => {
       {isHovered && (
         <div className="absolute top-0 bottom-0 left-0 right-0 z-50 transition-all ease-in-out hover:bg-slate-500/70">
           <div className="flex flex-col items-center justify-center w-full h-full">
-            <button className="py-2 font-bold text-orange-400 bg-white px-7">
-              Add to Cart
-            </button>
+            <Link to="/shop">
+              <button className="py-2 font-bold text-orange-400 bg-white px-7">
+                Add to Cart
+              </button>
+            </Link>
             <div className="flex w-full mt-4 font-semibold text-white justify-evenly">
               <div className="flex items-center gap-1 cursor-pointer">
                 <CiShare2 />

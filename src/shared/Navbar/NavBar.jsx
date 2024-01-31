@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { CiSearch } from "react-icons/ci";
 import { BsPerson } from "react-icons/bs";
 import { CiHeart } from "react-icons/ci";
@@ -6,6 +6,7 @@ import { IoCartOutline } from "react-icons/io5";
 import { RxCross2 } from "react-icons/rx";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
+import "./Navbar.css";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,16 +19,40 @@ const NavBar = () => {
   const links = (
     <>
       <li className={hoverEffect}>
-        <Link to="/">Home</Link>
+        <NavLink
+          to="/"
+          className={`${({ isActive }) => {
+            isActive ? "active" : "";
+          }}`}>
+          Home
+        </NavLink>
       </li>
       <li className={hoverEffect}>
-        <Link to="/shop">Shop</Link>
+        <NavLink
+          to="/shop"
+          className={`${({ isActive }) => {
+            isActive ? "active" : "";
+          }}`}>
+          Shop
+        </NavLink>
       </li>
       <li className={hoverEffect}>
-        <Link to="/about">About</Link>
+        <NavLink
+          to="/about"
+          className={`${({ isActive }) => {
+            isActive ? "active" : "";
+          }}`}>
+          About
+        </NavLink>
       </li>
       <li className={hoverEffect}>
-        <Link to="/contact">Contact</Link>
+        <NavLink
+          to="/contact"
+          className={`${({ isActive }) => {
+            isActive ? "active" : "";
+          }}`}>
+          Contact
+        </NavLink>
       </li>
     </>
   );
