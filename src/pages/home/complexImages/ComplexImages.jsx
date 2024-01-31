@@ -1,19 +1,19 @@
 const ComplexImages = () => {
   return (
-    <section className="grid grid-cols-12 mt-14 pt-24 gap-5 items-center relative">
+    <section className="relative grid items-center grid-cols-12 gap-5 pt-24 mt-16 mb-20">
       <div className="absolute top-[5%] left-[50%] translate-x-[-50%] text-center">
-        <h5 className="font-medium text-lg text-black/90">
+        <h5 className="text-lg font-medium text-black/90">
           Share your setup with
         </h5>
-        <h2 className="font-extrabold text-4xl text-black/85 mt-2">
+        <h2 className="mt-2 text-4xl font-extrabold text-black/85">
           #FurniroFurniture
         </h2>
       </div>
 
       {/* first col */}
-      <div className="col-span-5 flex flex-col gap-5">
+      <div className="flex flex-col col-span-5 gap-5">
         {/* top part */}
-        <div className="grid grid-cols-4 gap-5 items-baseline">
+        <div className="grid items-baseline grid-cols-4 gap-5">
           <div className="col-span-1">
             <img
               src="https://img.freepik.com/free-photo/picture-frame-with-abstract-art-by-pink-velvet-armchair_53876-128125.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph"
@@ -58,9 +58,9 @@ const ComplexImages = () => {
       </div>
 
       {/* last col */}
-      <div className="col-span-5 flex flex-col gap-5">
+      <div className="flex flex-col col-span-5 gap-5">
         {/* top part */}
-        <div className="grid grid-cols-4 gap-5 items-baseline">
+        <div className="grid items-baseline grid-cols-4 gap-5">
           <div className="col-span-2">
             <img
               src="https://img.freepik.com/free-photo/yellow-armchair-living-room-with-copy-space_43614-940.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph"
