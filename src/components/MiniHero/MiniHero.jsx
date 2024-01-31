@@ -9,8 +9,8 @@ const MiniHero = ({ title, subTitle }) => {
 
       <div className="absolute top-0 bottom-0 left-0 right-0 flex items-center justify-center bg-white/50">
         <div className="text-center">
-          <h3 className="text-5xl font-medium">{title}</h3>
-          <p className="pt-3 text-lg font-normal">{subTitle}</p>
+          <h3 className="text-3xl font-medium md:text-5xl">{title}</h3>
+          <p className="pt-3 font-normal md:text-lg">{subTitle}</p>
         </div>
       </div>
     </section>
