@@ -1,22 +1,13 @@
-import { useEffect, useState } from "react";
 import Product from "./Product";
 
-const Products = () => {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    fetch("products.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setProducts(data);
-      });
-  }, []);
-
+const Products = ({ products, title }) => {
   return (
     <section className="mx-auto max-w-7xl mt-28">
-      <h1 className="text-3xl font-bold text-center md:text-5xl text-slate-900 drop-shadow-xl">
-        Our Products
-      </h1>
+      {title && (
+        <h1 className="text-3xl font-bold text-center md:text-5xl text-slate-900 drop-shadow-xl">
+          {title}
+        </h1>
+      )}
       <div className="grid grid-cols-1 px-5 lg:px-0 gap-10 mt-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {products.map((product, index) => (
           <Product key={index} product={product}></Product>

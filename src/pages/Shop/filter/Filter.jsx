@@ -1,8 +1,17 @@
 import { GrSort } from "react-icons/gr";
 import { PiDotsNineBold } from "react-icons/pi";
 import { BsViewList } from "react-icons/bs";
+import { useState } from "react";
 
 const Filter = () => {
+  const [value, setValue] = useState("Bedroom");
+
+  const handleSelectedValue = (e) => {
+    setValue(e.target.value);
+  };
+
+  console.log(value);
+
   return (
     <section className="flex items-center justify-between h-24 px-10 bg-orange-100">
       {/* left part */}
@@ -43,11 +52,16 @@ const Filter = () => {
             Sort by
             <select
               id="sort"
+              onChange={handleSelectedValue}
+              defaultValue={value}
               className="w-40 h-10 text-center focus:outline-none">
-              <option value="default">Default</option>
-              <option value="sofa">Sofa</option>
-              <option value="table">Table</option>
-              <option value="bed">Bed</option>
+              <option value="Bedroom">Bedroom</option>
+              <option value="Living Room">Living Room</option>
+              <option value="Dining">Dining</option>
+              <option value="Office">Office</option>
+              <option value="Home Decor">Home Decor</option>
+              <option value="Outdoor">Outdoor</option>
+              <option value="Kids">Kids</option>
             </select>
           </label>
         </div>
