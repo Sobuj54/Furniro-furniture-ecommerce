@@ -1,11 +1,8 @@
 import { GrSort } from "react-icons/gr";
 import { PiDotsNineBold } from "react-icons/pi";
 import { BsViewList } from "react-icons/bs";
-import { useState } from "react";
 
-const Filter = () => {
-  const [value, setValue] = useState("Bedroom");
-
+const Filter = ({ value, setValue }) => {
   const handleSelectedValue = (e) => {
     setValue(e.target.value);
   };
@@ -41,7 +38,7 @@ const Filter = () => {
           <input
             type="number"
             id="show"
-            defaultValue={16}
+            defaultValue={8}
             min={8}
             max={24}
             className="h-10 text-center w-14 focus:outline-none"

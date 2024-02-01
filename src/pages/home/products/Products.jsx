@@ -13,11 +13,13 @@ const Products = ({ products, title }) => {
           <Product key={index} product={product}></Product>
         ))}
       </div>
-      <div className="mt-10 text-center">
-        <button className="px-10 py-3 font-bold text-orange-500 transition-all duration-150 border-2 border-orange-400 hover:bg-orange-500 hover:text-white">
-          Show More
-        </button>
-      </div>
+      {products.length > 8 && (
+        <div className="mt-10 text-center">
+          <button className="px-10 py-3 font-bold text-orange-500 transition-all duration-150 border-2 border-orange-400 hover:bg-orange-500 hover:text-white">
+            Show More
+          </button>
+        </div>
+      )}
     </section>
   );
 };
