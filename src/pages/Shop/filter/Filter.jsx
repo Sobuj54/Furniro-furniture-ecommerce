@@ -2,7 +2,7 @@ import { GrSort } from "react-icons/gr";
 import { PiDotsNineBold } from "react-icons/pi";
 import { BsViewList } from "react-icons/bs";
 
-const Filter = ({ value, setValue }) => {
+const Filter = ({ products, value, setValue }) => {
   const handleSelectedValue = (e) => {
     setValue(e.target.value);
   };
@@ -28,7 +28,7 @@ const Filter = ({ value, setValue }) => {
 
         <div className="h-7 text-black border-2 w-[4px] bg-black" />
 
-        <p>Showing 1-16 of 32 results</p>
+        <p>Showing {products.length} results</p>
       </div>
 
       {/* right part */}
@@ -51,7 +51,8 @@ const Filter = ({ value, setValue }) => {
               id="sort"
               onChange={handleSelectedValue}
               defaultValue={value}
-              className="w-40 h-10 text-center focus:outline-none">
+              className="w-40 h-10 text-center focus:outline-none ml-2">
+              <option value="default">Default</option>
               <option value="Bedroom">Bedroom</option>
               <option value="Living Room">Living Room</option>
               <option value="Dining">Dining</option>

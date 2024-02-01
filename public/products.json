@@ -5,7 +5,8 @@
       "images": [
         "https://img.freepik.com/free-photo/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table_105762-2185.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph",
         "https://img.freepik.com/free-photo/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table_105762-2053.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph",
-        "https://img.freepik.com/free-photo/3d-rendering-modern-dining-set-modern-luxury-dining-room_105762-2202.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph"
+        "https://img.freepik.com/free-photo/3d-rendering-modern-dining-set-modern-luxury-dining-room_105762-2202.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph",
+        "https://img.freepik.com/free-photo/3d-rendering-scandinavian-vintage-modern-kitchen-with-dining-area_105762-2192.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph"
       ],
       "intro": "Gather your family around this dining table for memorable meals.",
       "price": 500,
@@ -15,12 +16,29 @@
       "description": "Crafted from solid wood, this dining table combines timeless elegance with durability. The intricate detailing on the legs adds a touch of sophistication to your dining area."
     },
     {
+      "product_name": "Classy Dining Table",
+      "product_type": "Dining",
+      "images": [
+        "https://img.freepik.com/free-photo/four-person-table-front-window-restaurant_140725-2513.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph",
+        "https://img.freepik.com/free-photo/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table_105762-2053.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph",
+        "https://img.freepik.com/free-photo/3d-rendering-modern-dining-set-modern-luxury-dining-room_105762-2202.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph",
+        "https://img.freepik.com/free-photo/3d-rendering-scandinavian-vintage-modern-kitchen-with-dining-area_105762-2192.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph"
+      ],
+      "intro": "Gather your family around this dining table for memorable meals.",
+      "price": 600,
+      "discount": 25,
+      "offer": "Free shipping on orders over $500.",
+      "rating": 5,
+      "description": "Crafted from solid wood, this dining table combines timeless elegance with durability. The intricate detailing on the legs adds a touch of sophistication to your dining area."
+    },
+    {
       "product_name": "Comfortable Sofa Set",
       "product_type": "Living Room",
       "images": [
         "https://img.freepik.com/free-photo/3d-rendering-loft-luxury-living-room-with-bookshelf-near-bookshelf_105762-2224.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
         "https://img.freepik.com/free-photo/bangkok-thailand-august-12-2016-beautiful-luxury-living-room_1203-2867.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
-        "https://img.freepik.com/free-photo/living-room-interior_1048-9888.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais"
+        "https://img.freepik.com/free-photo/living-room-interior_1048-9888.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
+        "https://img.freepik.com/free-photo/3d-rendering-loft-luxury-living-room-with-bookshelf-near-bookshelf_105762-2224.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais"
       ],
       "intro": "Create a cozy living space with this comfortable sofa set.",
       "price": 800,
@@ -35,7 +53,8 @@
       "images": [
         "https://img.freepik.com/free-photo/modern-office-space-with-desktops-with-modern-computers-created-with-generative-ai-technology_185193-110089.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph",
         "https://img.freepik.com/free-photo/3d-rendering-luxury-business-meeting-working-room-executive-office_105762-1993.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph",
-        "https://img.freepik.com/free-photo/empty-room-with-chairs-desks_23-2149008873.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph"
+        "https://img.freepik.com/free-photo/empty-room-with-chairs-desks_23-2149008873.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph",
+        "https://img.freepik.com/free-photo/conference-room-with-desk-wall-windows-that-says-office_1340-37385.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph"
       ],
       "intro": "Enhance your workspace with this sleek and modern office desk.",
       "price": 300,
@@ -49,8 +68,9 @@
         "product_type": "Bedroom",
         "images": [
           "https://img.freepik.com/free-photo/room-interior-design_23-2148899453.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
-          "https://example.com/bed-frame-2.jpg",
-          "https://example.com/bed-frame-3.jpg"
+          "https://img.freepik.com/free-photo/modern-apartment-bedroom-comfortable-bed-near-window-generative-ai_188544-7709.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph",
+          "https://img.freepik.com/free-photo/comfortable-modern-bedroom-with-elegant-decoration-lighting-generative-ai_188544-7715.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph",
+          "https://img.freepik.com/free-photo/comfortable-modern-bedroom-with-elegant-wood-headboard-generated-by-ai_24640-87460.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph"
         ],
         "intro": "Transform your bedroom with this charming vintage bed frame.",
         "price": 700,
@@ -64,8 +84,9 @@
         "product_type": "Living Room",
         "images": [
           "https://img.freepik.com/free-photo/front-view-empty-workplace_23-2148727527.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
-          "https://example.com/accent-chair-2.jpg",
-          "https://example.com/accent-chair-3.jpg"
+          "https://img.freepik.com/free-photo/gray-sofa-white-living-room-with-copy-space_43614-909.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
+          "https://img.freepik.com/free-photo/3d-rendering-loft-luxury-living-room-with-bookshelf_105762-2104.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
+          "https://img.freepik.com/free-photo/picture-frame-wall-with-scandinavian-home-interior_53876-139779.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais"
         ],
         "intro": "Add a touch of elegance to your living room with this stylish accent chair.",
         "price": 250,
@@ -79,8 +100,9 @@
         "product_type": "Living Room",
         "images": [
           "https://img.freepik.com/free-photo/high-angle-coffee-cup-book-table_23-2149678902.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
-          "https://example.com/coffee-table-2.jpg",
-          "https://example.com/coffee-table-3.jpg"
+          "https://img.freepik.com/free-photo/3d-rendering-loft-scandinavian-living-room-with-working-table-bookshelf_105762-2162.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
+          "https://img.freepik.com/free-photo/sofa-living-room-with-copy-space_43614-869.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
+          "https://img.freepik.com/free-photo/loft-luxury-living-room-with-bookshelf-near-dining-table_105762-1796.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais"
         ],
         "intro": "Complete your living room setup with this charming rustic coffee table.",
         "price": 150,
@@ -94,8 +116,9 @@
         "product_type": "Office",
         "images": [
           "https://img.freepik.com/free-photo/comfy-wing-chair-carpenter-s-workshop_181624-25944.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
-          "https://example.com/leather-chair-2.jpg",
-          "https://example.com/leather-chair-3.jpg"
+          "https://img.freepik.com/free-photo/vertical-shot-blue-chair-made-up-wooden-legs_181624-33152.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
+          "https://img.freepik.com/free-photo/beautiful-shot-modern-black-grey-chair-isolated-white_181624-22598.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
+          "https://img.freepik.com/free-photo/loft-armchair-living-room-furniture_53876-111135.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais"
         ],
         "intro": "Upgrade your office with the sophistication of an executive leather chair.",
         "price": 400,
@@ -109,8 +132,9 @@
         "product_type": "Home Decor",
         "images": [
           "https://img.freepik.com/free-photo/home-interior-design-arrangement_23-2148986615.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
-          "https://example.com/bookshelf-2.jpg",
-          "https://example.com/bookshelf-3.jpg"
+          "https://img.freepik.com/free-photo/yellow-armchair-living-room-with-copy-space_43614-940.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
+          "https://img.freepik.com/free-photo/gray-sofa-brown-living-room-with-copy-space_43614-954.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
+          "https://img.freepik.com/free-photo/scandinavian-living-room-interior-design-zoom-background_53876-143147.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais"
         ],
         "intro": "Showcase your literary collection with this sleek contemporary bookshelf.",
         "price": 300,
@@ -124,8 +148,9 @@
         "product_type": "Outdoor",
         "images": [
           "https://img.freepik.com/free-photo/outdoor-patio-with-chair-table_1339-4789.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
-          "https://example.com/patio-set-2.jpg",
-          "https://example.com/patio-set-3.jpg"
+          "https://img.freepik.com/free-photo/life-style_1122-1816.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph",
+          "https://img.freepik.com/free-photo/empty-chair-decoration-outdoor-patio_74190-8662.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
+          "https://img.freepik.com/free-photo/umbrella-deck-chair-around-outdoor-swimming-pool-hotel-resort-with-sea-ocean-beach-coconut-palm-tree_74190-14086.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais"
         ],
         "intro": "Create an inviting outdoor space with this elegant garden patio set for beauty and comfort.",
         "price": 600,
@@ -139,8 +164,9 @@
         "product_type": "Home Decor",
         "images": [
           "https://img.freepik.com/free-photo/close-up-cozy-texture-detail_23-2149385300.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
-          "https://example.com/throw-blanket-2.jpg",
-          "https://example.com/throw-blanket-3.jpg"
+          "https://img.freepik.com/free-photo/beautiful-home-with-healthy-green-plants_23-2149383712.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
+          "https://img.freepik.com/free-photo/living-room-interior_1048-8212.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
+          "https://img.freepik.com/free-photo/green-sofa-white-living-room-with-free-space_43614-834.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais"
         ],
         "intro": "Add warmth to your home with this irresistibly soft and cozy throw blanket.",
         "price": 50,
@@ -154,8 +180,9 @@
         "product_type": "Kids",
         "images": [
           "https://img.freepik.com/free-photo/furniture-background-clean-wall-wood_1253-666.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
-          "https://example.com/bunk-bed-2.jpg",
-          "https://example.com/bunk-bed-3.jpg"
+          "https://img.freepik.com/free-photo/bed-arrangements-still-life_23-2150532989.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
+          "https://img.freepik.com/free-photo/young-friends-hostel_52683-121727.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
+          "https://img.freepik.com/free-photo/girl-arranging-bedsheet-bedroom_23-2147824148.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais"
         ],
         "intro": "Create a playful and functional space for your kids with this sturdy bunk bed.",
         "price": 350,
@@ -169,8 +196,9 @@
         "product_type": "Bedroom",
         "images": [
           "https://img.freepik.com/free-photo/3d-rendering-classic-interior_23-2150943441.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=ais",
-          "https://example.com/wardrobe-2.jpg",
-          "https://example.com/wardrobe-3.jpg"
+          "https://img.freepik.com/free-photo/3d-rendering-luxury-scandinavian-wood-walk-closet-with-wardrobe-make-up-table_105762-2147.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph",
+          "https://img.freepik.com/free-photo/wood-sideboard-living-room-interior-with-copy-space_43614-827.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph",
+          "https://img.freepik.com/free-photo/modern-fashion-collection-hanging-clean-coathangers-generated-by-ai_188544-37224.jpg?size=626&ext=jpg&ga=GA1.1.336852061.1702737158&semt=sph"
         ],
         "intro": "Add a touch of history to your bedroom with this exquisite antique wardrobe.",
         "price": 900,

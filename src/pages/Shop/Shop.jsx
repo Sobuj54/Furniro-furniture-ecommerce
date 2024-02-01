@@ -7,14 +7,18 @@ import Filter from "./filter/Filter";
 
 const Shop = () => {
   const [products] = useProducts();
-  const [value, setValue] = useState("Bedroom");
-  const filteredValue = products.filter(
-    (product) => product.product_type == value
-  );
+  const [value, setValue] = useState("default");
+
+  let filteredValue;
+  if (value === "default") {
+    filteredValue = products;
+  } else {
+    filteredValue = products.filter((product) => product.product_type == value);
+  }
   return (
     <>
       <MiniHero title="Shop" subTitle="Home > Shop" />
-      <Filter value={value} setValue={setValue} />
+      <Filter products={products} value={value} setValue={setValue} />
       <Products products={filteredValue} />
       <Badge />
     </>
