@@ -18,7 +18,7 @@ const Shop = () => {
   return (
     <>
       <MiniHero title="Shop" subTitle="Home > Shop" />
-      <Filter products={products} value={value} setValue={setValue} />
+      <Filter products={filteredValue} value={value} setValue={setValue} />
       <Products products={filteredValue} />
       <Badge />
     </>

@@ -9,8 +9,8 @@ const Products = ({ products, title }) => {
         </h1>
       )}
       <div className="grid grid-cols-1 px-5 lg:px-0 gap-10 mt-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {products.map((product, index) => (
-          <Product key={index} product={product}></Product>
+        {products.map((product) => (
+          <Product key={product._id} product={product}></Product>
         ))}
       </div>
       {products.length > 8 && (
