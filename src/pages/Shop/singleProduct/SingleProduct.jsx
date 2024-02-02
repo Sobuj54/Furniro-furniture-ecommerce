@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ProductDetails from "./productDetails/ProductDetails";
 import MiniNav from "../../../components/miniNav/MiniNav";
+import AdditionalInfo from "./additionalInfo/AdditionalInfo";
 
 const SingleProduct = () => {
   const [product, setProduct] = useState("");
@@ -19,6 +20,7 @@ const SingleProduct = () => {
     <section>
       <MiniNav name={product.product_name} />
       {product && <ProductDetails product={product} />}
+      {product && <AdditionalInfo product={product} />}
     </section>
   );
 };
