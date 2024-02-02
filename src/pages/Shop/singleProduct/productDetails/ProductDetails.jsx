@@ -32,10 +32,10 @@ const ProductDetails = ({ product }) => {
   };
 
   return (
-    <div className="grid grid-cols-12 max-w-7xl mx-auto my-14">
+    <div className="grid grid-cols-1 lg:grid-cols-12 max-w-7xl mx-auto my-14">
       {/* image part */}
-      <div className="col-span-5 flex gap-7">
-        <div className="flex flex-col gap-7">
+      <div className="px-5 md:px-10 lg:px-0 lg:col-span-5 flex gap-4 md:gap-7 mb-10">
+        <div className="flex flex-col gap-4 md:gap-7">
           {images.map((img, index) => (
             <img
               key={index}
@@ -55,9 +55,9 @@ const ProductDetails = ({ product }) => {
       </div>
 
       {/* title and description part */}
-      <div className="col-span-7 pl-16">
-        <h2 className="text-4xl font-medium">{product_name}</h2>
-        <h3 className="text-2xl mt-2 text-black/70">$ {price}</h3>
+      <div className="col-span-7 px-10 lg:px-0 lg:pl-16">
+        <h2 className="text-3xl md:text-4xl font-medium">{product_name}</h2>
+        <h3 className="text-xl md:text-2xl mt-2 text-black/70">$ {price}</h3>
         <Rating
           style={{ maxWidth: 150 }}
           value={rating}
@@ -93,24 +93,24 @@ const ProductDetails = ({ product }) => {
         </div>
 
         {/* add to cart button */}
-        <div className="mt-10 flex gap-7">
-          <div className="h-14 w-32 border-2 rounded-md border-black p-3 flex justify-between items-center text-xl">
+        <div className="mt-10 flex flex-col md:flex-row  gap-7">
+          <div className="h-14 w-full md:w-32 border-2 rounded-md border-black p-3 flex justify-between items-center text-xl">
             <button onClick={decreaseQuantity}>-</button>
             <p>{quantity}</p>
 
             <button onClick={increaseQuantity}>+</button>
           </div>
 
-          <button className="h-14 px-10 border-2 rounded-md border-black p-3 text-xl font-medium">
+          <button className="h-14 px-10 border-2 rounded-md border-black p-3 text-xl font-medium hover:bg-orange-400 hover:text-white hover:border-orange-300">
             Add to Cart
           </button>
-          <button className="h-14 px-10 border-2 rounded-md border-black p-3 text-xl font-medium">
+          <button className="h-14 px-10 border-2 rounded-md border-black p-3 text-xl font-medium hover:bg-orange-400 hover:text-white hover:border-orange-300">
             + Compare
           </button>
         </div>
 
         <div className="w-full h-[1px] bg-black/30 my-10" />
-        <div className="text-black/60 text-lg font-medium grid grid-cols-6">
+        <div className="text-black/60 text-base md:text-lg font-medium grid grid-cols-6">
           <div className="col-span-2 flex flex-col gap-4">
             <p>SKU</p>
             <p>Category</p>
@@ -119,13 +119,13 @@ const ProductDetails = ({ product }) => {
           </div>
           <div className="col-span-4 flex flex-col gap-4">
             <p>
-              : <span className="ml-3">SS01</span>
+              : <span className="ml-2 md:ml-3">SS01</span>
             </p>
             <p>
-              : <span className="ml-3">{product_type}</span>
+              : <span className="ml-2 md:ml-3">{product_type}</span>
             </p>
             <p>
-              : <span className="ml-3">Sofa,Chair,Home,Shop</span>
+              : <span className="ml-2 md:ml-3">Sofa,Chair,Home,Shop</span>
             </p>
             <p className="flex gap-4 text-black items-center">
               :
