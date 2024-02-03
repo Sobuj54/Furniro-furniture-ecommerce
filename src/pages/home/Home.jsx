@@ -1,3 +1,4 @@
+import Spinner from "../../components/spinner/Spinner";
 import useProducts from "../../hooks/useProducts";
 import BrowseRange from "./Range/BrowseRange";
 import ComplexImages from "./complexImages/ComplexImages";
@@ -6,14 +7,18 @@ import Products from "./products/Products";
 import Rooms from "./rooms/Rooms";
 
 const Home = () => {
-  const [products] = useProducts();
+  const [products, isLoading] = useProducts();
   console.log(products);
 
   return (
     <div>
       <Hero />
       <BrowseRange />
-      <Products products={products} title="Our Products" />
+      {isLoading ? (
+        <Spinner />
+      ) : (
+        <Products products={products} title="Our Products" />
+      )}
       <div className="bg-[#FCF8F3]">
         <Rooms />
       </div>

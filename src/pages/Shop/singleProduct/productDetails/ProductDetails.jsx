@@ -7,7 +7,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const ProductDetails = ({ product }) => {
   const [quantity, setQuantity] = useState(0);
-
+  const [activeImage, setActiveImage] = useState(0);
   const {
     product_name,
     product_type,
@@ -39,17 +39,18 @@ const ProductDetails = ({ product }) => {
           {images.map((img, index) => (
             <img
               key={index}
+              onClick={() => setActiveImage(index)}
               src={img}
               alt={product_name}
-              className="h-20 w-full object-cover rounded-md"
+              className="h-20 w-full object-cover rounded-md cursor-pointer"
             />
           ))}
         </div>
         <div>
           <img
-            src={images[0]}
+            src={images[activeImage]}
             alt={product_name}
-            className="h-[500px] w-full object-cover rounded-md"
+            className="h-[500px] w-full lg:w-[430px] object-cover rounded-md"
           />
         </div>
       </div>

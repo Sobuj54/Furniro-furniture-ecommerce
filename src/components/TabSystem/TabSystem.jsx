@@ -4,7 +4,7 @@ const TabSystem = ({ description }) => {
   const [currentTab, setCurrentTab] = useState("description");
 
   return (
-    <div className="">
+    <div>
       {/* tab buttons */}
       <div className="flex gap-10 justify-center">
         <button

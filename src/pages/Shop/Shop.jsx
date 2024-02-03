@@ -4,9 +4,10 @@ import useProducts from "../../hooks/useProducts";
 import Products from "../home/products/Products";
 import Badge from "./badge/Badge";
 import Filter from "./filter/Filter";
+import Spinner from "../../components/spinner/Spinner";
 
 const Shop = () => {
-  const [products] = useProducts();
+  const [products, isLoading] = useProducts();
   const [value, setValue] = useState("default");
 
   let filteredValue;
@@ -15,6 +16,11 @@ const Shop = () => {
   } else {
     filteredValue = products.filter((product) => product.product_type == value);
   }
+
+  if (isLoading) {
+    return <Spinner />;
+  }
+
   return (
     <>
       <MiniHero title="Shop" subTitle="Home > Shop" />
