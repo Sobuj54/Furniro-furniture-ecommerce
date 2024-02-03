@@ -7,8 +7,6 @@ const Filter = ({ products, value, setValue }) => {
     setValue(e.target.value);
   };
 
-  console.log(value);
-
   return (
     <section className="flex items-center justify-between h-24 px-10 bg-orange-100">
       {/* left part */}

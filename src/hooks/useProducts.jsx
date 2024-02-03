@@ -1,10 +1,12 @@
 import { useQuery } from "@tanstack/react-query";
 
-const useProducts = () => {
+const useProducts = (limit) => {
   const { data: products, isLoading } = useQuery({
     queryKey: ["products"],
     queryFn: () =>
-      fetch("http://localhost:5000/products").then((res) => res.json()),
+      fetch(`http://localhost:5000/products?limit=${limit}`).then((res) =>
+        res.json()
+      ),
   });
 
   return [products, isLoading];

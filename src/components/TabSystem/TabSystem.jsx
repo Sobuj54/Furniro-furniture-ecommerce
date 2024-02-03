@@ -6,12 +6,12 @@ const TabSystem = ({ description }) => {
   return (
     <div>
       {/* tab buttons */}
-      <div className="flex gap-10 justify-center">
+      <div className="flex gap-5 md:gap-10 px-5 md:px-10 lg:px-0 justify-center">
         <button
           className={
             currentTab == "description"
-              ? "text-2xl font-medium"
-              : "text-2xl font-medium text-black/50"
+              ? "text-lg md:text-2xl font-medium"
+              : "text-lg md:text-2xl font-medium text-black/50"
           }
           onClick={() => setCurrentTab("description")}>
           Description
@@ -19,8 +19,8 @@ const TabSystem = ({ description }) => {
         <button
           className={
             currentTab == "information"
-              ? "text-2xl font-medium"
-              : "text-2xl font-medium text-black/50"
+              ? "text-lg md:text-2xl font-medium"
+              : "text-lg md:text-2xl font-medium text-black/50"
           }
           onClick={() => setCurrentTab("information")}>
           Additional Information
@@ -28,15 +28,15 @@ const TabSystem = ({ description }) => {
         <button
           className={
             currentTab == "reviews"
-              ? "text-2xl font-medium"
-              : "text-2xl font-medium text-black/50"
+              ? "text-lg md:text-2xl font-medium"
+              : "text-lg md:text-2xl font-medium text-black/50"
           }
           onClick={() => setCurrentTab("reviews")}>
           Reviews
         </button>
       </div>
 
-      <div className="max-w-5xl mx-auto mt-10 text-black/80">
+      <div className="max-w-5xl mx-auto px-5 md:px-10 lg:px-0 mt-10 text-black/80">
         {currentTab == "description" ? (
           <p>
             {description} <br /> <br /> Lorem ipsum dolor sit amet consectetur,
