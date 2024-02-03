@@ -1,10 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
+import { Suspense, lazy } from "react";
 import Main from "../layout/Main";
 import Home from "../pages/home/Home";
-import Shop from "../pages/Shop/Shop";
 import About from "../pages/about/About";
 import Contact from "../pages/contact/Contact";
 import SingleProduct from "../pages/Shop/singleProduct/SingleProduct";
+import Spinner from "../components/spinner/Spinner";
+const Shop = lazy(() => import("../pages/Shop/Shop"));
+const ShopLayout = lazy(() => import("../layout/ShopLayout"));
 
 const router = createBrowserRouter([
   {
@@ -16,8 +19,26 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "shop",
-        element: <Shop />,
+        // implemented nested route
+        element: (
+          <Suspense fallback={<Spinner />}>
+            <ShopLayout />
+          </Suspense>
+        ),
+        children: [
+          {
+            path: "shop",
+            element: (
+              <Suspense fallback={<Spinner />}>
+                <Shop />
+              </Suspense>
+            ),
+          },
+          {
+            path: "shop/:id",
+            element: <SingleProduct />,
+          },
+        ],
       },
       {
         path: "about",
@@ -26,10 +47,6 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contact />,
-      },
-      {
-        path: "product/:id",
-        element: <SingleProduct />,
       },
     ],
   },

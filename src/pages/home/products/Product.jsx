@@ -38,7 +38,7 @@ const Product = ({ product }) => {
       {isHovered && (
         <div className="absolute top-0 bottom-0 left-0 right-0 z-50 transition-all ease-in-out hover:bg-slate-500/70">
           <div className="flex flex-col items-center justify-center w-full h-full">
-            <Link to={`/product/${_id}`}>
+            <Link to={`/shop/${_id}`}>
               <button className="py-2 font-bold text-orange-400 bg-white px-7">
                 Add to Cart
               </button>
