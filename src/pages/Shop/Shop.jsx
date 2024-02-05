@@ -8,6 +8,7 @@ import { useQuery } from "@tanstack/react-query";
 
 const Shop = () => {
   const [value, setValue] = useState("default");
+  const [filterByPrice, setFilterByPrice] = useState(1);
 
   const { data: filteredValue = [], isLoading: isCategoryLoading } = useQuery({
     queryKey: ["category", value],
@@ -22,7 +23,11 @@ const Shop = () => {
     products: filteredValue,
     value: value,
     setValue: setValue,
+    filterByPrice: filterByPrice,
+    setFilterByPrice: setFilterByPrice,
   };
+
+  console.log(filterByPrice);
 
   return (
     <>

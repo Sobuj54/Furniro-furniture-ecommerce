@@ -87,7 +87,7 @@ const NavBar = () => {
           {links}
         </ul>
 
-        {/* icons */}
+        {/* icons  for mobile*/}
         <div className="flex gap-5 mt-10 text-xl md:hidden">
           <div className={iconsHoverEffect}>
             <BsPerson />
@@ -107,7 +107,9 @@ const NavBar = () => {
       {/* icons */}
       <div className="hidden gap-5 text-xl md:flex">
         <div className={iconsHoverEffect}>
-          <BsPerson />
+          <Link to="/login">
+            <BsPerson />
+          </Link>
         </div>
         <div className={iconsHoverEffect}>
           <CiSearch />

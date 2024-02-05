@@ -6,6 +6,7 @@ import About from "../pages/about/About";
 import Contact from "../pages/contact/Contact";
 import SingleProduct from "../pages/Shop/singleProduct/SingleProduct";
 import Spinner from "../components/spinner/Spinner";
+import Login from "../pages/login/Login";
 const Shop = lazy(() => import("../pages/Shop/Shop"));
 const ShopLayout = lazy(() => import("../layout/ShopLayout"));
 
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contact />,
+      },
+      {
+        path: "login",
+        element: <Login />,
       },
     ],
   },

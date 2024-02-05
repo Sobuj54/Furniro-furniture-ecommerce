@@ -1,8 +1,15 @@
-import { GrSort } from "react-icons/gr";
 import { PiDotsNineBold } from "react-icons/pi";
 import { BsViewList } from "react-icons/bs";
+import { BsSortDownAlt } from "react-icons/bs";
+import { BsSortDown } from "react-icons/bs";
 
-const Filter = ({ products, value, setValue }) => {
+const Filter = ({
+  products,
+  value,
+  setValue,
+  filterByPrice,
+  setFilterByPrice,
+}) => {
   const handleSelectedValue = (e) => {
     setValue(e.target.value);
   };
@@ -12,9 +19,15 @@ const Filter = ({ products, value, setValue }) => {
       {/* left part */}
       <div className="flex items-center gap-6">
         <div className="flex items-center gap-2">
-          <button>
-            <GrSort />
-          </button>
+          {filterByPrice == 1 ? (
+            <button onClick={() => setFilterByPrice(1)} className="text-lg">
+              <BsSortDownAlt />
+            </button>
+          ) : (
+            <button onClick={() => setFilterByPrice(0)} className="text-lg">
+              <BsSortDown />
+            </button>
+          )}
           <p>Filter</p>
         </div>
         <button className="text-2xl">
