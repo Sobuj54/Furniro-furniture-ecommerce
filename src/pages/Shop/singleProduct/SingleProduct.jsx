@@ -4,6 +4,7 @@ import MiniNav from "../../../components/miniNav/MiniNav";
 import AdditionalInfo from "./additionalInfo/AdditionalInfo";
 import { useQuery } from "@tanstack/react-query";
 import Spinner from "../../../components/spinner/Spinner";
+import SimilarProducts from "./similarProducts/SimilarProducts";
 
 const SingleProduct = () => {
   const { id } = useParams();
@@ -44,6 +45,8 @@ const SingleProduct = () => {
       <ProductDetails product={product} />
       <div className="w-full h-[1px] bg-black/50 mb-14" />
       <AdditionalInfo product={product} />
+      <div className="w-full h-[1px] bg-black/30 mb-16" />
+      <SimilarProducts product={product} />
     </section>
   );
 };
