@@ -23,7 +23,7 @@ const SingleProduct = () => {
   } = useQuery({
     queryKey: ["product", id],
     queryFn: () =>
-      fetch(`http://localhost:5000/products/${id}`).then((res) => res.json()),
+      fetch(`http://localhost:5000/product/${id}`).then((res) => res.json()),
   });
 
   if (isLoading) {

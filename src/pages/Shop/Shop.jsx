@@ -1,21 +1,21 @@
 import { useState } from "react";
 import MiniHero from "../../components/MiniHero/MiniHero";
-import useProducts from "../../hooks/useProducts";
 import Products from "../home/products/Products";
 import Badge from "./badge/Badge";
 import Filter from "./filter/Filter";
 import Spinner from "../../components/spinner/Spinner";
+import { useQuery } from "@tanstack/react-query";
 
 const Shop = () => {
-  const [products, isLoading] = useProducts(0);
   const [value, setValue] = useState("default");
 
-  let filteredValue;
-  if (value === "default") {
-    filteredValue = products;
-  } else {
-    filteredValue = products.filter((product) => product.product_type == value);
-  }
+  const { data: filteredValue = [], isLoading: isCategoryLoading } = useQuery({
+    queryKey: ["category", value],
+    queryFn: () =>
+      fetch(`http://localhost:5000/products/${value}`).then((res) =>
+        res.json()
+      ),
+  });
 
   // multiple props for filter component
   const filterProps = {
@@ -24,16 +24,13 @@ const Shop = () => {
     setValue: setValue,
   };
 
-  if (isLoading) {
-    return <Spinner />;
-  }
-
   return (
     <>
       <MiniHero title="Shop" subTitle="Home > Shop" />
       {/* sending multiple props at the same time less code */}
       <Filter {...filterProps} />
-      <Products products={filteredValue} />
+      {isCategoryLoading ? <Spinner /> : <Products products={filteredValue} />}
+
       <Badge />
     </>
   );
