@@ -2,10 +2,36 @@ import { Link } from "react-router-dom";
 import SocialLogin from "../../components/socialLogin/SocialLogin";
 import { FaEyeSlash } from "react-icons/fa";
 import { FaRegEye } from "react-icons/fa";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { useForm } from "react-hook-form";
+import { AuthProvider } from "../../context/Context";
 
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const { register, handleSubmit } = useForm();
+  const { createUserWithEmail, updateUser } = useContext(AuthProvider);
+
+  const onSubmit = (data) => {
+    console.log(data);
+    const { name, email, password } = data;
+
+    createUserWithEmail(email, password)
+      .then((loggedUser) => {
+        // console.log(loggedUser.user);
+        // update user name
+        updateUser(name)
+          .then(() => {
+            // console.log("name updated");
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
   return (
     <section
       style={{
@@ -20,13 +46,18 @@ const Register = () => {
             Login
           </Link>
         </p>
-        <form className="flex flex-col gap-5  ">
+
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="flex flex-col gap-5  ">
           <label htmlFor="name" className="flex flex-col text-white">
             Name
             <input
               type="text"
               name=""
               id="name"
+              {...register("name")}
+              required
               placeholder="Enter your name"
               className="border-b-2 border-white p-2 px-4 rounded-md focus:outline-none focus:border-b-sky-400 transition-all duration-150 text-black"
             />
@@ -38,6 +69,8 @@ const Register = () => {
               type="email"
               name=""
               id="email"
+              {...register("email")}
+              required
               placeholder="Enter your email"
               className="border-b-2 border-white p-2 px-4 rounded-md focus:outline-none focus:border-b-sky-400 transition-all duration-150 text-black"
             />
@@ -51,14 +84,16 @@ const Register = () => {
               type={showPassword ? "text" : "password"}
               name=""
               id="password"
+              {...register("password")}
+              required
               placeholder="Enter your password"
               className="border-b-2 border-white p-2 px-4 rounded-md focus:outline-none focus:border-b-sky-400 transition-all duration-150 text-black "
             />
-            <button
-              className="absolute top-[55%] text-black right-2"
+            <div
+              className="absolute top-[55%] text-black right-2  cursor-pointer"
               onClick={() => setShowPassword(!showPassword)}>
               {showPassword ? <FaRegEye /> : <FaEyeSlash />}
-            </button>
+            </div>
           </label>
 
           <button

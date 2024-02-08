@@ -8,7 +8,6 @@ import Rooms from "./rooms/Rooms";
 
 const Home = () => {
   const [products, isLoading] = useProducts(12);
-  console.log(products);
 
   return (
     <div>
