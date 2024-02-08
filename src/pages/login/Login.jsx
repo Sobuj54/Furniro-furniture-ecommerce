@@ -2,10 +2,28 @@ import { Link } from "react-router-dom";
 import SocialLogin from "../../components/socialLogin/SocialLogin";
 import { FaEyeSlash } from "react-icons/fa";
 import { FaRegEye } from "react-icons/fa";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { useForm } from "react-hook-form";
+import { AuthProvider } from "../../context/Context";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const { handleSubmit, register } = useForm();
+  const { emailLogin } = useContext(AuthProvider);
+
+  const onSubmit = (data) => {
+    console.log(data);
+    const { email, password } = data;
+
+    emailLogin(email, password)
+      .then((loggedUser) => {
+        console.log(loggedUser.user);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
   return (
     <section
       style={{
@@ -20,13 +38,18 @@ const Login = () => {
             Register
           </Link>
         </p>
-        <form className="flex flex-col gap-5  ">
+
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="flex flex-col gap-5  ">
           <label htmlFor="email" className="flex flex-col text-white">
             Email
             <input
               type="email"
               name=""
               id="email"
+              {...register("email")}
+              required
               placeholder="Enter your email"
               className="border-b-2 border-white p-2 px-4 rounded-md focus:outline-none focus:border-b-sky-400 transition-all duration-150 text-black"
             />
@@ -40,14 +63,16 @@ const Login = () => {
               type={showPassword ? "text" : "password"}
               name=""
               id="password"
+              {...register("password")}
+              required
               placeholder="Enter your password"
               className="border-b-2 border-white p-2 px-4 rounded-md focus:outline-none focus:border-b-sky-400 transition-all duration-150 text-black"
             />
-            <button
-              className="absolute top-[55%] text-black right-2"
+            <div
+              className="absolute top-[55%] text-black right-2 cursor-pointer"
               onClick={() => setShowPassword(!showPassword)}>
               {showPassword ? <FaRegEye /> : <FaEyeSlash />}
-            </button>
+            </div>
           </label>
 
           <button

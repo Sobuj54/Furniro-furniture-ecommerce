@@ -4,12 +4,26 @@ import { BsPerson } from "react-icons/bs";
 import { CiHeart } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
 import { RxCross2 } from "react-icons/rx";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { FaUserTag } from "react-icons/fa";
+import { FiLogOut } from "react-icons/fi";
 import "./Navbar.css";
+import { AuthProvider } from "../../context/Context";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { user, logOut } = useContext(AuthProvider);
+
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {
+        console.log("logged out");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
 
   const hoverEffect =
     "hover:underline hover:underline-offset-4 decoration-2 transition-all duration-150";
@@ -88,7 +102,7 @@ const NavBar = () => {
         </ul>
 
         {/* icons  for mobile*/}
-        <div className="flex gap-5 mt-10 text-xl md:hidden">
+        <div className="flex gap-5 mt-10 text-xl md:hidden items-center">
           <div className={iconsHoverEffect}>
             <BsPerson />
           </div>
@@ -101,14 +115,17 @@ const NavBar = () => {
           <div className={iconsHoverEffect}>
             <IoCartOutline />
           </div>
+          <div className={iconsHoverEffect}>
+            <FiLogOut />
+          </div>
         </div>
       </div>
 
       {/* icons */}
-      <div className="hidden gap-5 text-xl md:flex">
+      <div className="hidden gap-5 text-xl md:flex items-center">
         <div className={iconsHoverEffect}>
-          <Link to="/login">
-            <BsPerson />
+          <Link to={`${user ? "/user" : "/login"}`}>
+            {user ? <FaUserTag className="text-green-500" /> : <BsPerson />}
           </Link>
         </div>
         <div className={iconsHoverEffect}>
@@ -120,6 +137,13 @@ const NavBar = () => {
         <div className={iconsHoverEffect}>
           <IoCartOutline />
         </div>
+        {user && (
+          <div
+            onClick={handleLogOut}
+            className={`${iconsHoverEffect} text-red-400 text-lg`}>
+            <FiLogOut />
+          </div>
+        )}
       </div>
     </nav>
   );

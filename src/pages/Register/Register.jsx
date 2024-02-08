@@ -12,7 +12,6 @@ const Register = () => {
   const { createUserWithEmail, updateUser } = useContext(AuthProvider);
 
   const onSubmit = (data) => {
-    console.log(data);
     const { name, email, password } = data;
 
     createUserWithEmail(email, password)
