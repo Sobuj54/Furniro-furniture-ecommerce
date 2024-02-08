@@ -1,75 +1,14 @@
-import { Link, NavLink } from "react-router-dom";
-import { CiSearch } from "react-icons/ci";
-import { BsPerson } from "react-icons/bs";
-import { CiHeart } from "react-icons/ci";
-import { IoCartOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 import { RxCross2 } from "react-icons/rx";
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { FaUserTag } from "react-icons/fa";
-import { FiLogOut } from "react-icons/fi";
-import "./Navbar.css";
-import { AuthProvider } from "../../context/Context";
+import useNavIcons from "../../hooks/useNavIcons";
+import useNavLinks from "../../hooks/useNavLinks";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { user, logOut } = useContext(AuthProvider);
-
-  const handleLogOut = () => {
-    logOut()
-      .then(() => {
-        console.log("logged out");
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
-
-  const hoverEffect =
-    "hover:underline hover:underline-offset-4 decoration-2 transition-all duration-150";
-  const iconsHoverEffect =
-    "hover:scale-125 cursor-pointer transition-all duration-150 hover:text-blue-500";
-
-  const links = (
-    <>
-      <li className={hoverEffect}>
-        <NavLink
-          to="/"
-          className={`${({ isActive }) => {
-            isActive ? "active" : "";
-          }}`}>
-          Home
-        </NavLink>
-      </li>
-      <li className={hoverEffect}>
-        <NavLink
-          to="/shop"
-          className={`${({ isActive }) => {
-            isActive ? "active" : "";
-          }}`}>
-          Shop
-        </NavLink>
-      </li>
-      <li className={hoverEffect}>
-        <NavLink
-          to="/about"
-          className={`${({ isActive }) => {
-            isActive ? "active" : "";
-          }}`}>
-          About
-        </NavLink>
-      </li>
-      <li className={hoverEffect}>
-        <NavLink
-          to="/contact"
-          className={`${({ isActive }) => {
-            isActive ? "active" : "";
-          }}`}>
-          Contact
-        </NavLink>
-      </li>
-    </>
-  );
+  const navIcons = useNavIcons();
+  const links = useNavLinks();
 
   return (
     <nav className="h-20 flex items-center justify-between px-10 z-[100]">
@@ -79,7 +18,7 @@ const NavBar = () => {
         <h3 className="text-2xl font-bold font-montserrat">Furniro</h3>
       </Link>
 
-      {/* navlinks for desktop */}
+      {/* nav links for desktop */}
       <div className="hidden md:block">
         <ul className="flex gap-12 font-semibold font-montserrat">{links}</ul>
       </div>
@@ -90,7 +29,7 @@ const NavBar = () => {
         {isOpen ? <RxCross2 /> : <RxHamburgerMenu />}
       </div>
 
-      {/*     navlinks for mobile */}
+      {/* nav links for mobile */}
       <div
         className={
           isOpen
@@ -103,47 +42,13 @@ const NavBar = () => {
 
         {/* icons  for mobile*/}
         <div className="flex gap-5 mt-10 text-xl md:hidden items-center">
-          <div className={iconsHoverEffect}>
-            <BsPerson />
-          </div>
-          <div className={iconsHoverEffect}>
-            <CiSearch />
-          </div>
-          <div className={iconsHoverEffect}>
-            <CiHeart />
-          </div>
-          <div className={iconsHoverEffect}>
-            <IoCartOutline />
-          </div>
-          <div className={iconsHoverEffect}>
-            <FiLogOut />
-          </div>
+          {navIcons}
         </div>
       </div>
 
-      {/* icons */}
+      {/* icons for desktop */}
       <div className="hidden gap-5 text-xl md:flex items-center">
-        <div className={iconsHoverEffect}>
-          <Link to={`${user ? "/user" : "/login"}`}>
-            {user ? <FaUserTag className="text-green-500" /> : <BsPerson />}
-          </Link>
-        </div>
-        <div className={iconsHoverEffect}>
-          <CiSearch />
-        </div>
-        <div className={iconsHoverEffect}>
-          <CiHeart />
-        </div>
-        <div className={iconsHoverEffect}>
-          <IoCartOutline />
-        </div>
-        {user && (
-          <div
-            onClick={handleLogOut}
-            className={`${iconsHoverEffect} text-red-400 text-lg`}>
-            <FiLogOut />
-          </div>
-        )}
+        {navIcons}
       </div>
     </nav>
   );

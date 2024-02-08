@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import SocialLogin from "../../components/socialLogin/SocialLogin";
 import { FaEyeSlash } from "react-icons/fa";
 import { FaRegEye } from "react-icons/fa";
@@ -8,7 +8,8 @@ import { AuthProvider } from "../../context/Context";
 
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, reset } = useForm();
+  const navigate = useNavigate();
   const { createUserWithEmail, updateUser } = useContext(AuthProvider);
 
   const onSubmit = (data) => {
@@ -21,6 +22,8 @@ const Register = () => {
         updateUser(name)
           .then(() => {
             // console.log("name updated");
+            reset();
+            navigate("/");
           })
           .catch((error) => {
             console.log(error);
